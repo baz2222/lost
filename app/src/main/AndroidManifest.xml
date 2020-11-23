@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools" package="com.vasyl.velhus.lost">
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application
+            android:label="@string/app_name"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:name=".Launcher"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN"/>
+                    <category android:name="android.intent.category.LAUNCHER"/>
+                </intent-filter>
+        </activity>
+        <activity android:name=".LostGame"/>
+        <activity android:name=".LogoSplashScreen"/>
+    </application>
+
+</manifest>
